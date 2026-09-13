@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class greetHelloController {
+public class greetController {
 
     @GetMapping ("/hello")
     public String hello() {
@@ -15,5 +15,10 @@ public class greetHelloController {
     @GetMapping ("/hi")
     public String hi() {
         return "<h1>Hi from server!</h1>";
+    }
+
+    @GetMapping ("/bye")
+    public String bye() {
+        return "<h1>Bye, see you later!</h1>";
     }
 }
